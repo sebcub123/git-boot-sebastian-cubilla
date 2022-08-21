@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img{
+    width: 250px;
+    padding: 10px;
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+}
+
+.header li{
+    margin: 5px;
+    font-size: 20px;
+}
+
+.header a{
+    color: black;
+    text-decoration: none;
+}
+
+.header a:hover{
+    color: #f8077f;
+    font-weight: bolder;
+}
+
+.header input{
+    background-color: #f8078027;
+    height: 30px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.header input:hover{
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+.footer{
+    height: 150px;
+}
+.footer ul{
+    list-style: none;
+    display: flex;
+    width: 100px;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 15px;
+}
+.footer li{
+    margin: 10px;
+}
+
+/* INDEX */
+
+.main-index{
+    display: flex;
+}
+
+.main-index img{
+    width: 100%;
+}
+
+/* NOSOTROS */
+
+.main-nosotros img{
+    width: 100%;
+    height: 200px;
+}
+
+.main-nosotros h3, .main-nosotros h1, .main-nosotros p{
+    text-align: center;
+}
+
+.main-nosotros h3{
+    font-size: 28px;
+}
+
+.main-nosotros h1{
+    font-size: 48px;
+    color: #f8077f;
+}
+
+.main-nosotros p{
+    font-size: 24px;
+}
+
+
+/* SUCURSALES */
+
+.main-sucursales{
+    background-color: #f8037e15;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.txtSuc h1, .txtSuc h3{
+    text-align: center;
+}
+
+.txtSuc h1{
+    font-size: 36px;
+}
+
+.txtSuc h3{
+    font-size: 24px;
+}
+
+/* CONTACTO */
+
+.main-contacto{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.main-contacto ul{
+    list-style: none;
+    margin: 20px;
+}
+
+
+.contNombre input{
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+.contEdad label{
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    text-align: center;
+}
+.contCalendario input{
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    text-align: center;
+}
+.contEmail input{
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    text-align: center;
+}
+.contTelefono input{
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    text-align: center;
+}
+.contComentario textarea{
+    width: 300px;
+    height: 100px;
+    text-align: center;
+}
+.contEnviar input{
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+/* TIENDA */
+
+.main-tienda img{
+    width: 100%;
+}
+
+.contenedorProductos{
+    border: #f8077f 2px solid;
+    border-radius: 5%;
+    padding: 5px;text-align: center;
+    margin: 5px;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container img{
+    width: 300px;
+}
+
+
+@media (max-width: 990px){
+    .header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header img{
+        width: 150px;
+    }
+    .header li{
+        margin: 3px;
+        font-size: 16px;
+    }
+    .header input{
+        height: 22px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 650px){
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 450px){
+    .header ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header li{
+        margin: 10px;
+        font-size: 12px;
+    }
+    .header input{
+        margin-bottom: 10px;
+    }
+    .footer li{
+        margin: 3px;
+    }
+    .contenedorProductos img{
+        width: 200px;
+    }
+
+    .main-sucursales{
+        display: block;
+        margin-top: 20px;
+    }
+    .map{
+        width: 315px;
+        text-align: center;
+    }
+
+    .main-contacto{
+        display: block;
+    }
+
+    .main-contacto ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contNombre input{
+        width: 150px;
+        height: 30px;
+        margin: 20px;
+    }
+    
+    .contEdad label{
+        width: 150px;
+        height: 30px;
+        margin: 20px;
+    }
+    .contCalendario input{
+        width: 150px;
+        height: 30px;
+        margin: 20px;
+    }
+    .contEmail input{
+        width: 150px;
+        height: 30px;
+        margin: 20px;
+    }
+    .contTelefono input{
+        width: 150px;
+        height: 30px;
+        margin: 20px;
+    }
+    .contComentario textarea{
+        width: 150px;
+        height: 30px;
+        margin: 20px;
+    }
+    .contEnviar input{
+        width: 150px;
+        height: 30px;
+        margin: 20px;
+    }
+}
